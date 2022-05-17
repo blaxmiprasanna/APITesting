@@ -3,6 +3,7 @@ package testscript;
 import org.testng.annotations.Test;
 
 import io.restassured.response.Response;
+import jsonRequestAndResponse.JsonPostRequest;
 import utilities.HelperClass;
 
 public class CreatePlaceIdAPIUsingPostRequest {
@@ -11,7 +12,7 @@ public class CreatePlaceIdAPIUsingPostRequest {
 		
 //		RestAssured.baseURI = HelperClass.readDataFromPropertyFile().getBaseURL();
 		
-		Response response=utilities.JsonPostRequest.createPostRequest(HelperClass.readDataFromPropertyFile().getKey(), 
+		Response response=JsonPostRequest.createPostRequest(HelperClass.readDataFromPropertyFile().getKey(), 
 				HelperClass.readDataFromPropertyFile().getContentType(), payloadFiles.PayloadToCreatePostRequest.postRequest(), 
 				HelperClass.readDataFromPropertyFile().getBaseURL(),
 				HelperClass.readDataFromPropertyFile().getBasePathForPost());	

@@ -1,4 +1,4 @@
-package utilities;
+package jsonRequestAndResponse;
 
 import java.util.LinkedHashMap;
 
