@@ -8,5 +8,5 @@
     <classes>
       <class name="testscript.PostRequestUsingFile"/>
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test> <!-- Tests -->
+</suite> <!-- Suites -->
