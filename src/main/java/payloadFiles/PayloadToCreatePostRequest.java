@@ -4,13 +4,14 @@ import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.RestAssured;
+import utilities.HelperClass;
 import utilities.ReadPayLoadData;
 
 public class PayloadToCreatePostRequest {
 	
 	public static String postRequest() throws Exception {
 
-		RestAssured.baseURI = utilities.HelperClass.readDataFromPropertyFile().getBaseURL();
+		RestAssured.baseURI = HelperClass.readDataFromPropertyFile().getBaseURL();
 		
 		ReadPayLoadData readData=new ReadPayLoadData();
 		
